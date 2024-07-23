@@ -1,0 +1,167 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* header lista de gmail,etc */
+nav{
+    display:flex;
+    justify-content:flex-end ;
+}
+
+nav ul {
+display: flex;
+justify-content: flex-end;
+margin: 0px
+}
+
+.icono-buscador{
+    display: inline-block;
+    width: 20px;
+    margin: 0px;
+    /* esto es para la separacion de los iconos */
+    padding: 0px 8px;
+
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* para margen que no tnega el gris */
+body{
+    margin: 0px;
+}
+
+#links-footer{
+    display: flex;
+    justify-content: space-between;
+    /* es para la lineaabajo de mexico */
+    border-top: 1px solid #dadce0;
+}
+
+
+
+/* ponerlo todo como en horizontal, se pueden combinar */
+ul li {
+    display: inline;
+    padding: 15px;
+}
+
+ul {
+    padding-left: 0%;
+}
+
+footer{
+    background-color: #f2f2f2;
+}
+/* mexico alineado */
+footer p {
+    padding: 15px;
+    margin: 0px;
+    font-size: 16px;
+}
+
+
+/* la foto la hicimos circular */
+#perfil {
+    border-radius: 50%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* view for height */
+    height: 58vh;
+    /* alinear todo lo de buscador y eso de google */
+    padding-top: 60px;
+}
+
+article{
+    text-align: center;
+}
+
+/* logo google  */
+#logo img {
+    width: 272px ;
+}
+
+
+#buscador {
+border: 1px solid #dfe1e5;
+border-radius: 24px;
+
+
+display: flex;
+justify-content: center;
+padding: 10px 10px;
+/* para que no este tipo arriba */
+align-items: flex-end;
+width: 530px;
+/* margen de los botones */
+margin: 1.5em;
+}
+
+#buscador input{
+    /* esto es para el cuadrito de buscar se haga grande */
+    flex-grow: 3;
+    /* para que no se vea lo de escribir la border */
+    border: none;
+    /* para qur al escribir no se activen los bordes y nos delaten  */
+    outline: none;
+    /* relleno: linea de buscar quedara enmedio */
+    padding: 5px;
+}
+
+/* esto es para que al tocar el buscador se sombree */
+#buscador:hover { 
+        background: #fff;
+        box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+        border-color: transparent;
+    }
+
+
+
+#botones button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    padding: 0 16px;
+    height: 36px;
+    margin: 11px 4px;
+    border-radius: 4px;
+}
+
+/* para que se sombree cuando damos click en botones  */
+#botones button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+#botones{
+    padding-top: 10px;;
+}
+
+footer a {
+color:#202124;
+text-decoration: none;
+font-size: 14px;
+}
+header a {
+    color:#202124;
+    text-decoration: none;
+    font-size: 14px;
+    }
+
+/* cuando demos click  se haga subrayado */
+ a:hover{
+    text-decoration: underline;
+}
